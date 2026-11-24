@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="630.0" viewBox="0 0 760 630.0" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="628.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Bellman-Ford — relax everything, n−1 rounds</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Shortest paths when edges can be NEGATIVE — Dijkstra's one-way settling breaks</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">there. Here 0→1→2 costs 5−3 = 2, beating the direct 4.</text>
+<line x1="159.2" y1="192.9" x2="358.7" y2="140.6" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="259.9" y="160.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">5</text>
+<line x1="380.0" y1="155.0" x2="380.0" y2="239.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="380.0" y="192.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">-3</text>
+<line x1="159.2" y1="203.1" x2="358.7" y2="255.4" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="259.9" y="223.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">4</text>
+<line x1="399.3" y1="255.9" x2="598.9" y2="203.6" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="500.1" y="223.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">2</text>
+<circle cx="139.8" cy="198.0" r="18" fill="#dbeafe" stroke="#2563eb" stroke-width="1.4"/>
+<text x="139.8" y="203.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">0</text>
+<circle cx="380.0" cy="135.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="380.0" y="140.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">1</text>
+<circle cx="380.0" cy="261.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="380.0" y="266.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">2</text>
+<circle cx="620.2" cy="198.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="620.2" y="203.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">3</text>
+<line x1="24.0" y1="309.0" x2="736.0" y2="309.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="329.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="333.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="334.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Relax EVERY edge, n−1 times. Each round extends correct shortest paths by at least</text>
+<text x="56.0" y="353.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">one edge, so n−1 rounds cover any simple path.</text>
+<text x="24.0" y="377.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="600">rounds</text>
+<text x="47.0" y="393.0" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#64748b" text-anchor="middle">round</text>
+<text x="93.0" y="393.0" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#64748b" text-anchor="middle">dist after</text>
+<rect x="24.0" y="399.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="419.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">1</text>
+<rect x="70.0" y="399.0" width="44.0" height="30.0" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="92.0" y="419.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">[0, 5, 2, 4]</text>
+<rect x="24.0" y="431.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="451.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">2</text>
+<rect x="70.0" y="431.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="92.0" y="451.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">[0, 5, 2, 4] — no change, stop early</text>
+<line x1="24.0" y1="477.0" x2="736.0" y2="477.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="497.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="501.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="502.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Distances [0,5,2,4]. The bonus n-th round is the detector: anything STILL improving</text>
+<text x="56.0" y="521.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">means a reachable negative cycle — 'shortest' is then undefined, and the function</text>
+<text x="56.0" y="540.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">says so instead of lying.</text>
+<text x="72.0" y="575.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">contract</text>
+<rect x="84.0" y="556.0" width="162.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="165.0" y="575.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">dist → [0,5,2,4]</text>
+<rect x="256.0" y="556.0" width="450.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="481.0" y="575.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">n-th round improves → negative cycle → no answer</text>
+<text x="380.0" y="612.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
